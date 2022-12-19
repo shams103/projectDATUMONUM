@@ -1,0 +1,161 @@
+.registerPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/public/rt6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    padding-top: 8rem;
+    
+}
+
+.registerPage .regForm{
+    display: flex;
+    width: 80;
+    height: 50rem;
+    border-radius: 1rem;
+    margin: auto auto;
+   
+   
+    background: #ffffff;
+}
+
+.registerPage .regForm .part1{
+    width: 35rem;
+    height: 100%;
+    
+   
+}
+
+.registerPage .regForm .part1 img{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.registerPage .regForm .part2{
+    text-align: center;
+    margin: 5rem 4rem ;
+    width: 45rem;
+    padding-left: 6rem;
+    border-left: 4px solid rgb(8, 8, 8);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+
+.registerPage .regForm .part2::-webkit-scrollbar{
+    width: .5rem;
+  }
+  
+  .registerPage .regForm .part2::-webkit-scrollbar-track{
+    background: transparent;
+  }
+  
+  .registerPage .regForm .part2::-webkit-scrollbar-thumb{
+    background: #a4a4a4;
+    border-radius: 5rem;
+  }
+
+.registerPage .regForm .part2 h2{
+    font-size: 2.5rem;
+}
+
+.registerPage .regForm .part2 .inpField{
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+   
+    padding: 2rem 2rem;
+    text-align: left;
+}
+
+.registerPage .regForm .part2 .inpField .set{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid rgb(4, 0, 255); */
+    margin: 1rem 0;
+}
+
+.registerPage .regForm .part2 .inpField input, .registerPage .regForm .part2 .inpField select{
+
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #d4d2d2;
+    padding: 0.9rem 2rem;
+    border-radius: 1.8rem;
+    font-size: 1.5rem;
+}
+
+.registerPage .regForm .part2 .inpField select{
+    appearance: none;
+   
+}
+
+
+
+.registerPage .regForm .part2 .inpField input:focus{
+    background: #c5fcb0;
+}
+
+.registerPage .regForm .part2 .inpField .set label{
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.registerPage .regForm .part2 .inpField .setZ{
+ /* border: 2px solid red; */
+ display: flex;
+ padding-left: 1.5rem;
+ padding: 1.5rem;
+
+}
+.registerPage .regForm .part2 .inpField .setZ input{
+    width: fit-content;
+    /* border: 2px solid red; */
+}
+.registerPage .regForm .part2 .inpField .setZ label{
+    width: 100%;
+    /* border: 2px solid red; */
+    padding-left: 1rem;
+}
+
+.registerPage .regForm .part2 .inpField .setZ label:hover{
+   
+   text-decoration: underline;
+}
+
+.registerPage .regForm .part2 .signup{
+   
+    margin-top: 1rem;
+}
+
+.registerPage .regForm .part2 .signup:hover i{
+    transform: translateX(1rem);
+}
+.registerPage .regForm .part2 .signup button{
+    cursor: pointer;
+    border: 0.02rem solid #000;
+    width: fit-content;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    font-weight:300;
+    border-radius: 2rem;
+}
+
+.registerPage .regForm .part2 .signup button:hover{
+    background: rgba(0,0,0,1);
+    color: #fff;;
+}
+
+.registerPage .regForm .part2 .signup button i{
+    margin-left: 0.4rem;
+}

@@ -1,0 +1,281 @@
+nav{
+    height: 10vh;
+    width: 100%;
+    background: transparent;
+    /* background: #576770; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem ;
+    position: fixed;
+    z-index: 999;
+
+    /* border: 2px solid rgb(25, 0, 255); */
+      
+  }
+ 
+nav.sticky{
+    padding: 20px 0;
+    background: rgb(20, 11, 11);
+}
+  
+.navbar-logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 5.5rem;;
+    color: rgb(148, 17, 17);
+    border: 2px solid rgb(250, 249, 249);
+    background: #000;
+    padding: 0 1rem;
+    
+    
+  }
+/* .navbar-logo h2{
+   font-family: 'Indie Flower', cursive;
+   font-size: 2.5rem;
+  } */
+
+/* .navbar-logo p{
+    position: absolute;
+    left: 4rem;
+    top: 3.7rem;
+    font-size: 1.2rem;
+  } */
+
+  .navbar-logo img{
+    width: 15rem;
+    height: 4rem;
+  }
+  
+.nav-items {
+    /* border: 2px solid rgb(94, 255, 0); */
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 40rem;
+
+  }
+  
+.nav-items i{
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    font-size: 1.2rem;
+  }
+  
+.nav-items a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 1rem 0.9rem;
+    text-transform: uppercase;
+
+  }
+
+  .nav-items .reg{
+    background: #167fbb;
+    padding-left: 3.2rem;
+    padding-right: 2.1rem;
+  }
+
+ 
+  
+.nav-items li a:hover {
+   color: rgb(221, 91, 52);
+  }
+
+
+.misc{
+ position: relative;
+  right: 2rem;
+  padding-left: 2rem;
+  padding-right: 4rem;
+
+
+  }
+  .navbar .toggle i,
+  .navbar .misc i{
+ 
+    font-size: 3rem;
+    color: #fff;
+
+  }
+ 
+  nav .toggle button{
+    display: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    left: 2rem;
+  }
+
+  nav.active{
+    background: #000;
+  }
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 769px)
+  {
+    .services-submenu {
+     top: 8rem;
+     position: absolute;
+     display: none;
+     transition: all 2s linear;
+     border-top: 3px solid rgb(221, 91, 52);
+  }
+  .services-submenu.clicked {
+    display: block;
+   }
+
+   .misc  p{
+    left: 3rem
+   }
+  }
+
+
+  @media screen and (min-width: 768px) and (max-width: 900px) {
+    .nav-items .navLink {
+      font-size: 1.2rem;
+      margin-right: 1rem;
+    }
+   
+    .nav-items{
+      width: 60rem;
+    }
+    .navbar-logo h2{
+      font-size: 1.5rem;
+     }
+   
+   .navbar-logo p{
+    
+       left: 2rem;
+       font-size: 1rem;
+     }
+    .misc{
+    
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+
+
+
+  @media screen and (max-width: 768px) {
+    nav{
+      padding: 5% 5%;
+      justify-content: space-between;
+    }
+    .navbar-logo {
+      margin: 0 auto;
+    }
+    .misc{
+      margin: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+   
+    nav .nav-items {
+      display: none;
+    }
+    nav .toggle button{
+      display: block;
+      
+    }
+
+    
+    nav .small {
+      position: absolute;
+      top: 115%; left: 2rem; 
+      background:  #004166;
+      width: 70%;
+      height: fit-content;
+      box-shadow: .5rem .5rem 0 rgb(0, 65, 102, 0.3);
+      border-radius: .5rem;
+      border: .2rem solid #3d45b8;
+      opacity: 1;
+      transform: scale(1);
+      transition: .3s ease-out;
+      transform-origin: top right;
+
+  }
+
+  nav  .arrow{
+    margin-left: 0.5rem;
+  }
+
+  nav .small li .navLink{
+    color: #fff; 
+    display: block;
+    margin: 1rem;
+    padding: 1.4rem;
+    font-size: 1.5rem;
+    background: #3d45b8;
+
+}
+
+nav .small li .services-submenu {
+    overflow: hidden;
+    margin-left: 3rem;   
+      
+}
+
+nav .small li .services-submenu a{
+  display: block;
+}
+
+.services-submenu.clicked {
+    display: none;
+  
+}
+  }
+
+  
+  @media screen and (max-width: 500px) {
+   
+    .navbar-logo h2{
+      font-size: 2rem;
+     }
+   
+   .navbar-logo p{
+    
+       left: 3.5rem;
+       font-size: 1rem;
+     }
+  }
+
+
+
+
+
+  @media screen and (max-width: 450px) {
+    nav .small li .services-submenu {
+    
+      width: 15rem;
+    }
+  }
+
+  
+ 

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap');
+
+.Chefbox {
+    text-align: center;
+    height: 42rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    font-family: serif;
+   
+  }
+ 
+  .Chefbox:hover  .chefPic {
+    transform: translateY(-20px);
+
+  }
+  .Chefbox:hover .kera1{
+    z-index: 1;
+    box-shadow: rgba(252, 251, 251, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+  }
+  .Chefbox .chefPic{
+    
+  
+    height: 25rem;
+    padding: 0 0.7rem;
+    position: relative;
+    z-index: -1;
+    
+  }
+  .Chefbox .chefPic img{
+    height: 112%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .Chefbox .chefPic span{
+    position: absolute;
+    background: rgb(42, 106, 224);
+    top: 0.5rem;
+    right: 0;
+    color: rgb(255, 255, 255);
+    padding: 0.8rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    /* border: 2px solid red; */
+
+  }
+
+  .Chefbox .chefPic i{
+    font-size: 1.3rem;
+    margin-left: 0.7rem;
+    color: #eee;
+  }
+
+  .Chefbox  .kera1{
+    padding: 0.8rem;
+    background-color: #eee;
+    /* border: 2px solid rgb(13, 0, 255); */
+     
+  }
+
+  .Chefbox  .kera1 .kera1inner{
+    border: 1.9px dashed rgb(110, 108, 108);
+    padding: 1rem 1rem 2rem;
+   
+  
+  }
+
+  .Chefbox  .kera1 .kera1inner .innerbox{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    /* border: 2px solid rgb(78, 0, 39); */
+  }
+
+  .Chefbox  .kera1 .kera1inner .innerbox .first{
+    width: 17rem;
+    text-align: left;
+   
+    font-family: 'Raleway', serif;
+    padding: 0.5rem;
+  }
+  .Chefbox  .kera1 .kera1inner h2{
+    text-align: left;
+    margin: 0.8rem 0.5rem 1.5rem;
+    font-weight: 500;
+    font-size: 2.2rem;
+    font-family: 'Prompt', serif;
+    /* border: 2px solid rgb(97, 229, 15); */
+   
+    
+  }
+
+  .Chefbox  .kera1 .kera1inner .innerbox .first p{
+    /* background: rgb(153, 133, 133); */
+    
+    font-size: 1.5rem;
+    
+  }
+
+
+
+
+  .Chefbox  .kera1 .kera1inner p{
+    margin: 1rem 0 2rem;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Raleway', serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    
+  }
+
+
+  .Chefbox  .kera1 .kera1inner .innerbox .second{
+    /* border: 2px solid rgb(0, 0, 0); */
+    text-align: left;
+    padding: 0.5rem;
+  }
+
+  .Chefbox  .kera1 .kera1inner .innerbox .second p{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+
+
+  .Chefbox  .kera1 .kera1inner .innerbox p i{
+    font-size: 1.5rem;
+    margin-right: 0.8rem;
+    color: #3b06a5;
+  }
+
+  .chefBtn{
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 4rem;
+    border-bottom: 2px solid rgb(221, 91, 52);
+    border-top: none ;
+    border-left: none;
+    border-right: none;
+    color: rgb(221, 91, 52);
+      
+  }
+
+  .chefBtn:hover{
+    color: #fff;
+    background: rgb(26, 151, 124);
+
+  }
